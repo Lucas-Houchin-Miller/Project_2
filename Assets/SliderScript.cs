@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class SliderScript : MonoBehaviour {
 
-    public AudioSource nestone;
-    public AudioSource chickensong;
+    private AudioSource nestone;
+    private AudioSource chickensong;
     private Slider thisslider;
     // Start is called before the first frame update
     void Start()
     {
-        
+        chickensong = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        nestone = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

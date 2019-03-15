@@ -20,6 +20,7 @@ public class Bird : MonoBehaviour
     void Start()
     {
         musicSpeaker = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        //This is important! Use it for music stuff in C#.
 
         originalpos = transform.position;
         InvokeRepeating("Change_Direction_Randomly", 1, 1);
