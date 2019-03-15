@@ -19,10 +19,13 @@ public class SliderScript : MonoBehaviour {
     {
         
     }
-    public void SlideVolume()
+    public void SlideSFX()
     {
         nestone.volume = GetComponent<Slider>().value;
-        PlayerPrefs.SetFloat("Nest Volume", nestone.volume);
+        PlayerPrefs.SetFloat("Nest Volume", nestone.volume);   
+    }
+    public void SlideMusic()
+    {
         chickensong.volume = GetComponent<Slider>().value;
         PlayerPrefs.SetFloat("Chicken Volume", chickensong.volume);
     }
