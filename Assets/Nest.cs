@@ -19,6 +19,7 @@ public class Nest : MonoBehaviour
     void Start()
     {
         sfxSpeaker = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
+        //sfxSpeaker.volume = PlayerPrefs.GetFloat("SFX Volume");
         originalpos = transform.position;
     }
 

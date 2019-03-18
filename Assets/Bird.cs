@@ -20,6 +20,7 @@ public class Bird : MonoBehaviour
     void Start()
     {
         musicSpeaker = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        //musicSpeaker.volume = PlayerPrefs.GetFloat("Music Volume");
         //This is important! Use it for music stuff in C#.
 
         originalpos = transform.position;

@@ -18,6 +18,7 @@ public class Sky : MonoBehaviour
     void Start()
     {
         source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
+        //source.volume = PlayerPrefs.GetFloat("SFX Volume");
     }
 
     // Update is called once per frame
