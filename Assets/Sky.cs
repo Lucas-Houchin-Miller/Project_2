@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Sky : MonoBehaviour
 {
 
     private int lives = 3;
     public Text livesdisplay;
-    public AudioSource source;
+    private AudioSource source;
     public AudioClip splat;
     public static bool dead = false;
 
@@ -16,7 +17,7 @@ public class Sky : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,6 +49,10 @@ public class Sky : MonoBehaviour
         source.PlayOneShot(splat, 0.7f);
         lives -= 1;
         livesdisplay.text = lives.ToString();
-        if (lives <= 0) dead = true;
+        if (lives <= 0)
+        {
+            dead = true;
+            SceneManager.LoadScene("GG");
+        }
     }
 }
