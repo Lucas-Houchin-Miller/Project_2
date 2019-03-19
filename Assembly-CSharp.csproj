@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Bird.cs" />
     <Compile Include="Assets\Egg.cs" />
+    <Compile Include="Assets\MusicSlider.cs" />
     <Compile Include="Assets\Nest.cs" />
     <Compile Include="Assets\SceneTrans.cs" />
     <Compile Include="Assets\Score.cs" />

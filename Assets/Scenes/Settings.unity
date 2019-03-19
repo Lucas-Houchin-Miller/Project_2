@@ -1273,6 +1273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625662714}
+  - component: {fileID: 1625662717}
   - component: {fileID: 1625662715}
   - component: {fileID: 1625662716}
   m_Layer: 0
@@ -1376,6 +1377,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e149d6684afb041968096aec5e5816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1625662717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625662713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcabf51e0a8825743a856ca953e9feba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 1625662715}
 --- !u!1 &1774925655
 GameObject:
   m_ObjectHideFlags: 0
