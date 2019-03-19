@@ -13,6 +13,7 @@ public class Nest : MonoBehaviour
     public AudioClip shwop;
     public static int score = 0;
     public Text scoredisplay;
+    public Text hiscore;
     private Vector3 originalpos;
    
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class Nest : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("GamePlay")) gameStarted = true;
         if (gameStarted == true)
         {
+            hiscore.text = PlayerPrefs.GetInt("hiscore0").ToString();
             transform.position += nest_speed * new Vector3(Input.GetAxis("Horizontal"), 0, 0) * Time.deltaTime;
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -screen_edge, screen_edge), transform.position.y, 0);
