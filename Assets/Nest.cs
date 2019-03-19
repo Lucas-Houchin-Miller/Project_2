@@ -11,7 +11,7 @@ public class Nest : MonoBehaviour
     bool gameStarted = false;
     private AudioSource sfxSpeaker;
     public AudioClip shwop;
-    private int score = 0;
+    public static int score = 0;
     public Text scoredisplay;
     private Vector3 originalpos;
    
@@ -63,6 +63,6 @@ public class Nest : MonoBehaviour
         //save the score in PlayerPrefs;
         gameStarted = false;
         transform.Translate(originalpos - transform.position);
-        score = 0;
+        
     }
 }

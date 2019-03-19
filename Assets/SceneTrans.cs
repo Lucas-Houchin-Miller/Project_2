@@ -26,6 +26,7 @@ public class SceneTrans : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("GamePlay");
+        Nest.score = 0;
         //SceneManager.SetActiveScene(SceneManager.GetSceneByName("GamePlay"));
     }
     public void Settings()
@@ -37,4 +38,10 @@ public class SceneTrans : MonoBehaviour
     {
         SceneManager.LoadScene("StartScreen");
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
 }

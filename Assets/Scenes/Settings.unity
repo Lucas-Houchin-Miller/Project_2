@@ -306,7 +306,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.53
+  m_Value: 0.519
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228882805}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40e149d6684afb041968096aec5e5816, type: 3}
   m_Name: 
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228882805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9abe740e24cbcd14f82efb6ad7f3c260, type: 3}
   m_Name: 

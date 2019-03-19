@@ -15,7 +15,7 @@ public class MusicSlider : MonoBehaviour
         
         musicsource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         music.value = PlayerPrefs.GetFloat("Chicken Volume");
-        if (PlayerPrefs.GetFloat("Music Volume") == 0)
+        if (PlayerPrefs.GetFloat("Chicken Volume") == 0)
         {
             music.value = musicsource.volume;
         }

@@ -13,6 +13,10 @@ public class SFXSlider : MonoBehaviour
     {
         SFXsource = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
         sfx.value = PlayerPrefs.GetFloat("SFX Volume");
+        if (PlayerPrefs.GetFloat("SFX Volume") == 0)
+        {
+            sfx.value = SFXsource.volume;
+        }
     }
 
     // Update is called once per frame
