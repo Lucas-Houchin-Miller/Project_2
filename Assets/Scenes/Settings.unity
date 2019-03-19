@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 228882806}
   - component: {fileID: 228882808}
+  - component: {fileID: 228882809}
   - component: {fileID: 228882807}
   m_Layer: 0
   m_Name: SFX_Slider
@@ -309,7 +310,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 228882808}
+      - m_Target: {fileID: 228882809}
         m_MethodName: SlideSFX
         m_Mode: 1
         m_Arguments:
@@ -329,11 +330,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228882805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40e149d6684afb041968096aec5e5816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &228882809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228882805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abe740e24cbcd14f82efb6ad7f3c260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx: {fileID: 228882807}
 --- !u!1 &316231460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1366,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1625662716}
+      - m_Target: {fileID: 1625662717}
         m_MethodName: SlideMusic
         m_Mode: 1
         m_Arguments:
@@ -1372,7 +1386,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625662713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40e149d6684afb041968096aec5e5816, type: 3}
   m_Name: 

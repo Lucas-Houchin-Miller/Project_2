@@ -24,6 +24,7 @@ public class SliderScript : MonoBehaviour {
     {
         
     }
+
     public void SlideSFX()
     {
         nestone.volume = GetComponent<Slider>().value;

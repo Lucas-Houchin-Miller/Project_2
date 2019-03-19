@@ -9,10 +9,16 @@ public class MusicSlider : MonoBehaviour
     private AudioSource musicsource;
 
     // Start is called before the first frame update
+ 
     void Start()
-    { 
+    {
+        
         musicsource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
-        music.value = musicsource.volume;
+        music.value = PlayerPrefs.GetFloat("Chicken Volume");
+        if (PlayerPrefs.GetFloat("Music Volume") == 0)
+        {
+            music.value = musicsource.volume;
+        }
     }
 
     // Update is called once per frame
